@@ -193,3 +193,8 @@ df_integrado.to_sql(dw_table, engine, if_exists='replace', index=False)
 
 print(f"Datos cargados en la tabla '{dw_table}' del Data Warehouse.")
 
+# Exportar los datos a un archivo CSV
+df_integrado.to_csv('datos_integrados.csv', index=False)
+
+print("Los datos han sido exportados a 'datos_integrados.csv'.")
+
